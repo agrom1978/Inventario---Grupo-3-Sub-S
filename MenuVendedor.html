@@ -1,0 +1,57 @@
+<html>
+    <head> 
+        <link rel="stylesheet" href="formato.css">
+        <title>
+            Menu vendedor
+        </title>
+    </head>
+<body>
+    
+    <div class="container" >
+        <section id="content">
+            <form action="">
+                
+                <h1>Menu vendedor</h1>
+                <h1>Sistema de Inventario </h1>
+                <div><h4 >Escoja una opción del menú </h4></div>
+                
+                    <link rel="stylesheet" href="EstiloMenu.css">
+                    <nav id="menu">
+                      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                        <ul >
+                          <li><a href='http://'>Home</a></li>
+                          
+                          <li><a class="dropdown-arrow" a href='http://'>Productos</a>
+                            <ul class="sub-menus">
+                              
+                              <li><a href="ModificarProducto.html">Modificar Cantidad</a></li>
+                              
+                              <li><a href="">Consultar</a></li>
+                            </ul>  
+                          </li>
+                          <li><a class="dropdown-arrow" a href='http://'>Servicios</a>
+                            <ul class="sub-menus">
+                              <li><a href='http://'>Imprimir Inventario</a></li>
+                        </ul>
+                      </nav>
+                
+                <div>
+                    <input type="button" value="Salir" />
+                             
+                </div>
+            </form><!-- form -->
+            
+        </section><!-- content -->
+    </div><!-- container -->
+  <script>
+  function updatemenu() {
+    if (document.getElementById('responsive-menu').checked == true) {
+      document.getElementById('menu').style.borderBottomRightRadius = '0';
+      document.getElementById('menu').style.borderBottomLeftRadius = '0';
+    }else{
+      document.getElementById('menu').style.borderRadius = '10px';
+    }
+  }
+  </script>  
+  </body>
+    </html>

@@ -1,0 +1,39 @@
+<html>
+    <head> 
+        <link rel="stylesheet" href="formato.css">
+        <title>
+            Crear Producto
+        </title>
+    </head>
+<body>
+    
+    <div class="container" >
+        <section id="content">
+            <form action="">
+                
+                <h1>Crear Producto </h1>
+                <h1>Sistema de Inventario </h1>
+                <h4>Registre los datos del nuevo producto</h4>
+                <div>
+                    <input type="text" placeholder="Id producto" required="" id="idproducto" />
+                
+                    <input type="text" placeholder="Nombre producto" required="" id="nombreproducto" />
+                
+                    <input type="number" placeholder="Cantidad producto" required="" id="cantidadproducto" />
+                
+                    <h5 >Adjunte una imagen </h5>
+                    <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
+                </div>
+                <div>
+                    <input type="submit" value="Registrar" />
+                             
+                   <input type="button" value="Volver" onclick="location.href='MenuAdmin.html'"/>
+                </div>      
+                
+                         
+            </form><!-- form -->
+            
+        </section><!-- content -->
+    </div><!-- container -->
+    </body>
+    </html>

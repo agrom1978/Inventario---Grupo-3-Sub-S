@@ -1,0 +1,45 @@
+<html>
+    <head> 
+        <link rel="stylesheet" href="formato.css">
+        <title>
+            Crear Usuario
+        </title>
+    </head>
+<body>
+    
+    <div class="container" >
+        <section id="content">
+            <form action="">
+                
+                <h1>Crear Usuario </h1>
+                <h1>Sistema de Inventario </h1>
+                <h4>Ingrese los datos del nuevo usuario </h4>
+                <div>
+                    <input type="text" placeholder="Usuario" required="" id="username" />
+                
+                
+                    <input type="password" placeholder="Password" required="" id="Password" />
+                
+                             
+                    <input type="email" placeholder="E-mail" required="" id="email"/>
+                
+                    <select name="rol" required>
+                    <option value="">Tipo de usuario</option>
+                    <option value="admin">Administrador</option>
+                    <option value="vendedor">Vendedor</option>
+                    </select>
+                
+                
+                    <div>
+                        <input type="submit" value="Guardar" />
+                                 
+                       <input type="button" value="Volver" onclick="location.href='MenuAdmin.html'"/>
+                    </div>      
+                             
+                </div>
+            </form><!-- form -->
+            
+        </section><!-- content -->
+    </div><!-- container -->
+    </body>
+    </html>
